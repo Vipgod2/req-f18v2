@@ -665,7 +665,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ᴍᴇ 🥳")
     elif query.data == "source":
         buttons = [[
-            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/CT_Arena/135'),
+            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/filims_18/135'),
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -866,7 +866,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "deploy":
         buttons = [[
-           InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/CT_Arena/135'),
+           InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/filims_18/135'),
            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/Sathan_of_Telegram')
         ], [
             InlineKeyboardButton('⇍Bᴀᴄᴋ', callback_data='help')
@@ -965,7 +965,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("Bᴏᴛ Dᴀᴛᴀʙᴀꜱᴇ", url="t.me/cinemathattakam_group")
                   ],[
             InlineKeyboardButton("Gʀᴏᴜᴘ", url="t.me/cinemathattakam_group"),
-            InlineKeyboardButton("​Cʜᴀɴɴᴇʟ", url="t.me/ct_arena")
+            InlineKeyboardButton("​Cʜᴀɴɴᴇʟ", url="t.me/filims_18")
                   ],[
             InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url="t.me/cinemathattakam_group"),
             InlineKeyboardButton("Uᴘᴅᴀᴛᴇꜱ", url="t.me/ct_up_datess")
@@ -1207,7 +1207,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"🎪 ᴛɪᴛɪʟᴇ {search}\n\n┏ 🤴 ᴀsᴋᴇᴅʙʏ : {message.from_user.mention}\n┣⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href='https://t.me/{temp.U_NAME}'>ᴍᴀsᴛᴇʀ​</a>\n┗🍁 ᴄʜᴀɴɴᴇʟ : <a href='https://t.me/CT_Arena'>ᴄinemathattakam​</a>\n\nᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ\n\n★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}"
+        cap = f"🎪 ᴛɪᴛɪʟᴇ {search}\n\n┏ 🤴 ᴀsᴋᴇᴅʙʏ : {message.from_user.mention}\n┣⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href='https://t.me/{temp.U_NAME}'>ᴍᴀsᴛᴇʀ​</a>\n┗🍁 ᴄʜᴀɴɴᴇʟ : <a href='https://t.me/filims_18'>ᴄinemathattakam​</a>\n\nᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ\n\n★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}"
     if imdb and imdb.get('poster'):
         try:
             pic_fi=await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
